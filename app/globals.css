@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   /* Світла тема: легкий сірий фон, темний текст */
   --background: #ffffff; /* white */
@@ -21,7 +23,7 @@
 .dark {
   /* Темна тема: чорний фон, світлий текст */
   --background: #000000;
-  --foreground: #fafafa; /* zinc-50 */
+  --foreground: #ffffff;
 }
 
 body {
